@@ -1,0 +1,405 @@
+.header-navigation {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: #f5f6fa;
+}
+
+.top-header {
+  position: relative;
+  height: 30px;
+  background: #000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topUl {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  margin-bottom: 0;
+  left: 10px;
+}
+
+.topUl li {
+  list-style: none;
+
+}
+
+.topUl li a {
+  color: #f39c12;
+  font-weight: bold;
+  padding: 0px 10px;
+  word-wrap: normal;
+  display: inline-block;
+  transition: .1s;
+  opacity: .9;
+  font-size: 10px;
+}
+
+@media only screen and (min-width:768px) {
+  .topUl li a {
+    font-size: 13px;
+  }
+}
+
+.topUl li a:hover {
+  text-decoration: underline;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+}
+
+.burger {
+  position: absolute;
+  color: #111;
+  right: 20px;
+  font-size: 32px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width:768px) {
+  .burger {
+    display: none;
+    border: solid red;
+  }
+}
+
+/****SERVICE CENTER*****/
+.header-navigation #min-nav {
+  width: auto;
+}
+
+.header-navigation #min-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.header-navigation #min-nav li {
+  border-right: 1px solid #3498db;
+  font-size: 0.80em;
+}
+
+.header-navigation #min-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header-navigation #logo {
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (min-width:768px) {
+  .header-navigation #logo {
+    position: inherit;
+  }
+}
+
+.header-navigation #logo img {
+  width: 150px;
+  height: auto;
+}
+
+.header-navigation #social-links {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+}
+
+.header-navigation #social-links .links {
+  position: inherit;
+  right: 0;
+  float: right;
+}
+
+.fa-youtube {
+  color: #e84118 !important;
+}
+
+.header-navigation #social-links i {
+  color: #3498db;
+  margin-right: 20px;
+}
+
+#dropdownMenu {
+  position: relative;
+  z-index: 100;
+  display: none;
+  background-color: #f5f6fa;
+  box-shadow: .5px .5px 5px #111;
+}
+
+#dropdownMenu li {
+  list-style: none;
+  vertical-align: middle;
+  display: block;
+  color:#111;
+}
+
+#dropdownMenu li a {
+color: #444;
+}
+
+#dropdownMenu li:hover {
+  color: #000 ;
+  background-color: #c2c2c2 !important;
+}
+
+.main-navigation {
+  width: 100%;
+  height: 53px;
+  background-color: #54a0ff;
+  display: flex;
+}
+
+.main-navigation .nav-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mobile-nav {
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  z-index: 20;
+  visibility: hidden;
+  transition: .4s;
+}
+
+.mobile-nav .mobile-nav-link {
+  list-style: none;
+  background-color: #1e272e;
+  height: 100%;
+}
+
+.mobile-nav .mobile-nav-link ul {
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  z-index: 20;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.mobile-nav .mobile-nav-link li {
+  text-align: center;
+  padding: 5px;
+  line-height: 40px;
+}
+
+.mobile-nav .mobile-nav-link li a {
+  font-size: 18px;
+  color: #f5f6fa;
+  font-weight: 500;
+}
+
+.mobile-nav .mobile-nav-link li:hover {
+  background-color: #245;
+}
+
+.nav-link {
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+
+.nav-link li {
+  display: inline-block;
+}
+
+.nav-link li:hover #dropdownMenu{
+  display: block;
+}
+
+.nav-link li ul li {
+  display: block;
+}
+
+.nav-link li a {
+  display: block;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-link li a:hover {
+  background-color: #f5f6fa;
+  transition: .8s;
+  color: #535c68;
+  border-top-left-radius: 0px;
+}
+
+.active {
+  background-color: #f5f6fa;
+  color: #535c68 !important;
+}
+
+@media (max-width: 767px) {
+  .main-navigation {
+    display: none;
+  }
+
+  .nav-link{
+    border: solid red;
+    width: 92%;
+    height: 80vh;
+    position: absolute;
+    background: #54a0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(120%);
+    transition: transform 0.7s ease-in;
+    z-index: 100;
+  }
+
+  .nav-link li {
+    display: block;
+    line-height: 1em;
+    border: none;
+  }
+
+  .nav-link li a:hover {
+    text-decoration: underline;
+    background: none;
+  }
+
+  .active {
+    background: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-navigation {
+    height: 15%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+
+  .menuWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .header-navigation #min-nav {
+    display: flex;
+    word-wrap: normal;
+  }
+
+  .help {
+    display: block;
+  }
+
+  .header-navigation #social-links {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .header-navigation {
+    height: 20%;
+  }
+}
+
+.nav-active {
+  transform: translateX(5%);
+  opacity: 1;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.subPageMenu {
+  z-index: 10;
+  background: #b2bec3;
+  width: 100%;
+  position: relative;
+  margin-top: 3px;
+}
+
+.subPageMenu ul {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.subPageMenu ul li {
+  list-style: none;
+  color: #fff;
+}
+
+.subPageMenu ul li i {
+  text-decoration: underline;
+}
+
+.subPageMenu ul li {
+  margin-left: 10px;
+}
+
+.leftMenuContainer {
+  width: 100%;
+}
+
+.leftMenuContainer ul {
+  border: solid .5px;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.leftMenuContainer ul li {
+  list-style: none;
+  border-bottom: solid .2px #b2bec3;
+  transition: .5s;
+  cursor: pointer;
+  ;
+  padding: 10px;
+}
+
+.leftMenuContainer ul li:hover {
+  border-radius: 3px;
+  background-color: orange;
+}
+
+.leftMenuSelected {
+  background-color: orange;
+}

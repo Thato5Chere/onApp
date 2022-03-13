@@ -1,0 +1,93 @@
+
+/*---------------footer--------*/
+#footer{
+background-color: rgba(52, 152, 219,0.6);
+bottom: 0;
+width: 100%;
+height: 250px;
+margin-top: -250px;
+clear: both;
+}
+
+
+#footer .main-container{
+  display: flex;
+  width: 100%;
+  height:100%;
+  overflow: auto;
+  padding: 20px;
+  background-color: #2d3436;
+}
+
+
+#footer .main-container img{
+  width:150px;
+  height:150px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#footer .main-container .box{
+  list-style-type: none;
+  padding:10px 20px;
+  height: 100%;
+  flex-basis: 50%;
+  line-height: 1.0em;
+}
+
+.box h4{
+  font-weight: 700;
+  color: #fff;
+
+}
+
+#footer .main-container .box li{
+  font-size: 1.05rem;
+  position: relative;
+  color: #ecf0f1;
+  margin-bottom:5px;
+}
+
+#footer .bottom-footer{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-top: -20px;
+  clear: both;
+  background: #111;
+
+}
+
+#footer .bottom-footer p{
+  font-size: 0.8rem;
+  color: #fff;
+  margin: 0 auto;
+}
+
+
+
+
+
+@media (max-width: 767px){
+
+  #footer{
+    height: auto;
+    overflow: auto;
+  }
+
+  #footer .main-container{
+    display: block;
+  }
+
+}
+
+.legalities ul li a{
+  color:#fff;
+  font-family: arial;
+}
+
+.affiliates ul li a{
+  color: #fff;
+}
+/*---------------end of footer--------*/
