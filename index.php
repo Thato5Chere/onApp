@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/header.css">
-
   <title>APPLICATIONS || ILES </title>
 </head>
 <body>
@@ -22,7 +21,7 @@
       <h5 class="appFormLead">ILES ONLINE APPLICATION</h5>
     <div class="application-header">
 
-      <h5>PRELIMINARY INFORMATION msds</h5>
+      <h5>PRELIMINARY INFORMATION</h5>
       <p>Fill in the form below</p>
     </div>
 
