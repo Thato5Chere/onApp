@@ -23,7 +23,7 @@
     <div class="application-header">
 
       <h5>PRELIMINARY INFORMATION msds</h5>
-      <p>Fill in the form below</p>
+      <p>Fill in the form below </p>
     </div>
 
       <div class="col-md-8 application-form form-container">
